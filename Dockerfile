@@ -1,5 +1,17 @@
-FROM node:18 
+# Use official Node image
+FROM node:18
+
+# Create app directory
 WORKDIR /app
+
+# Copy files
+COPY package.json .
+RUN npm install
+
 COPY . .
-CMD ["node", "hello.js"]
+
+# Expose port
 EXPOSE 3000
+
+# Run app
+CMD ["npm", "start"]
