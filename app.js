@@ -4,7 +4,7 @@ const PORT = 3000;
 
 const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello Dinesh! Node.js app is running 🚀');
+    res.end('Hello Krithika! Node.js app is running 🚀');
 });
 
 server.listen(PORT, () => {
